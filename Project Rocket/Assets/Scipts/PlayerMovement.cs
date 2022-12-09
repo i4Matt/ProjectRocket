@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     private float moveSpeed;
     public float walkSpeed;
-    public float sprintSpeed;
+    //public float sprintSpeed;
     public float slideSpeed;
 
     private float desiredMoveSpeed;
@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
-    public KeyCode sprintKey = KeyCode.LeftShift;
+    //public KeyCode sprintKey = KeyCode.LeftShift;
     public KeyCode crouchKey = KeyCode.LeftControl;
 
     [Header("Ground Check")]
@@ -133,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
                 desiredMoveSpeed = slideSpeed;
             }
             else {
-                desiredMoveSpeed = sprintSpeed;
+                //desiredMoveSpeed = sprintSpeed;
             }
         }
 
@@ -144,10 +144,10 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Mode - Sprinting
-        else if(grounded && Input.GetKey(sprintKey)){
-            state = MovementState.sprinting;
-            desiredMoveSpeed = sprintSpeed;
-        }
+        //else if(grounded && Input.GetKey(sprintKey)){
+        //    state = MovementState.sprinting;
+        //    desiredMoveSpeed = sprintSpeed;
+        //}
 
         // Mode - Walking
         else if(grounded){

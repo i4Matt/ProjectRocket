@@ -37,10 +37,6 @@ public class Sliding : MonoBehaviour
         if(Input.GetKeyDown(slideKey) && (horizontalInput != 0 || verticalInput != 0)){
             StartSliding();
         }
-
-        if(Input.GetKeyUp(slideKey) && pm.sliding){
-            StopSliding();
-        }
     }
 
     private void FixedUpdate(){
@@ -51,11 +47,12 @@ public class Sliding : MonoBehaviour
 
     private void StartSliding(){
         pm.sliding = true;
+        if(slideTimer <= 0){
+            playerObj.localScale = new Vector3(playerObj.localScale.x, slideYScale, playerObj.localScale.z);
+            rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
 
-        playerObj.localScale = new Vector3(playerObj.localScale.x, slideYScale, playerObj.localScale.z);
-        rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
-
-        slideTimer = maxSlideTime;
+            slideTimer = maxSlideTime;
+        }
     }
 
     private void SlidingMovement(){
