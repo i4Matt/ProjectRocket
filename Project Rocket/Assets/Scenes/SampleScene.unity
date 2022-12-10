@@ -802,6 +802,7 @@ Transform:
   - {fileID: 2007156488}
   - {fileID: 1595564453}
   - {fileID: 698645408}
+  - {fileID: 1633779349}
   m_Father: {fileID: 1142860706}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5878,7 +5879,7 @@ Transform:
   m_Children:
   - {fileID: 167328953}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1179018581
 Mesh:
@@ -7026,6 +7027,11 @@ Transform:
   m_Father: {fileID: 167328953}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1633779349 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6625762085525621378, guid: b79b57775620b3a43b743a34f5bf1e98, type: 3}
+  m_PrefabInstance: {fileID: 1895153713}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1641963274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11963,7 +11969,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1660868647
 Mesh:
@@ -13246,7 +13252,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 167328953}
     m_Modifications:
     - target: {fileID: 6625762085525621368, guid: b79b57775620b3a43b743a34f5bf1e98, type: 3}
       propertyPath: m_Name
@@ -13258,7 +13264,7 @@ PrefabInstance:
       objectReference: {fileID: 688418394}
     - target: {fileID: 6625762085525621378, guid: b79b57775620b3a43b743a34f5bf1e98, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6625762085525621378, guid: b79b57775620b3a43b743a34f5bf1e98, type: 3}
       propertyPath: m_LocalPosition.x
