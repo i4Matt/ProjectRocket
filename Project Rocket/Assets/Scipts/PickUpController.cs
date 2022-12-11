@@ -6,6 +6,7 @@ public class PickUpController : MonoBehaviour
 {
     // Add Gun Script Here
     [Header("References")]
+    public ProjectileGun gunScript;
     public Rigidbody rb;
     public BoxCollider coll;
     public Transform player, gunContainer, fpsCam;
@@ -45,8 +46,7 @@ public class PickUpController : MonoBehaviour
         if (!equipped && distanceToPlayer.magnitude <= pickUpRange && Input.GetKeyDown(pickUpKey) && !slotFull) {PickUp();}
 
         // Drop if equipped and "Drop Key" is pressed
-        if (equipped && Input.GetKeyDown(dropKey)) {Drop();}
-        
+        if (equipped && Input.GetKeyDown(dropKey)) {Drop();}  
     }
 
     private void PickUp(){
@@ -64,6 +64,7 @@ public class PickUpController : MonoBehaviour
         coll.isTrigger = true;
 
         // Enable Gun Script
+        gunScript.enabled = true;
     }
 
     private void Drop(){
@@ -88,5 +89,6 @@ public class PickUpController : MonoBehaviour
         rb.AddTorque(new Vector3(random, random, random) * 10);
 
         // Disable Gun Script
+        gunScript.enabled = false;
     }
 }

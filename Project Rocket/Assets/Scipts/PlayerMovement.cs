@@ -113,10 +113,10 @@ public class PlayerMovement : MonoBehaviour
             Invoke(nameof(ResetJump), jumpCooldown);
         }
         // When to Crouch
-        if(Input.GetKeyDown(crouchKey)){
-            transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
-            rb.AddForce(Vector3.down * crouchForce, ForceMode.Impulse);
-        }
+        //if(Input.GetKeyDown(crouchKey)){
+            //transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
+            //rb.AddForce(Vector3.down * crouchForce, ForceMode.Impulse);
+        //}
 
         // Stop Crouching
         if (Input.GetKeyUp(crouchKey)){
