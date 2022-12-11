@@ -7,9 +7,6 @@ using System.Diagnostics;
 
 public class ProjectileGun : MonoBehaviour
 {
-
-
-
     [Header("Bullet")]
     public GameObject bullet;
 
@@ -48,12 +45,6 @@ public class ProjectileGun : MonoBehaviour
 
     [Header("Other")]
     public bool allowInvoke = true;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     void Awake(){
         // Make Sure Magazine is Full
@@ -155,35 +146,5 @@ public class ProjectileGun : MonoBehaviour
     void ReloadFinished() {
         bulletsLeft = magazineSize;
         reloading = false;
-    }
-
-
-
-    void OnCollisionStay(Collision collision)
-    {
-        foreach (ContactPoint contact in collision.contacts)
-        {
-            print(contact.thisCollider.name + " hit " + contact.otherCollider.name);
-            // Visualize the contact point
-            //object value = Debug.DrawRay(contact.point, contact.normal, Color.white);
-        }
-    }
-
-    void OnCollisionEnter(Collision co)
-    {
-        shootForce = 0;
-        upwardForce = 0;
-
-        ContactPoint contact = co.contacts[0];
-        Quaternion rot = Quaternion.FromToRotation (Vector3.up, contact.normal);
-        Vector3 pos = contact.point;
-
-        if (exp != null)
-        {
-            var hitVfX = Instantiate (exp, pos, rot);
-        }
-
-
-        Destroy (gameObject);
     }
 }
