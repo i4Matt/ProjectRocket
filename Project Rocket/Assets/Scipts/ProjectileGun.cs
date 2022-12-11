@@ -168,7 +168,7 @@ public class ProjectileGun : MonoBehaviour
 
         if (exp != null)
         {
-            var hitVfX = Instantiate (exp, pos, rot)
+            var hitVfX = Instantiate(exp, pos, rot);
         }
     }
 }
