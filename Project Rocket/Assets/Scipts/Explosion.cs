@@ -7,5 +7,6 @@ public class Explosion
 {
 	public Class1()
 	{
+		return null;
 	}
 }
