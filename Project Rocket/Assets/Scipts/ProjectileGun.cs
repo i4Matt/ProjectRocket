@@ -2,11 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Collections.Specialized;
 
 public class ProjectileGun : MonoBehaviour
 {
+
+
+
     [Header("Bullet")]
     public GameObject bullet;
+
+    [Header("Explosion")]
+    public GameObject exp;
 
     [Header("Force")]
     public float shootForce;
@@ -147,5 +154,21 @@ public class ProjectileGun : MonoBehaviour
     private void ReloadFinished() {
         bulletsLeft = magazineSize;
         reloading = false;
+    }
+
+
+    private void OncollisionEnter(Collision co)
+    {
+        shootForce = 0;
+        upwardForce = 0;
+
+        ConatactPoint contact = co.contacts[0];
+        Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
+        Vector3 pos = contact.point;
+
+        if (exp != null)
+        {
+            var hitVfX = Instantiate (exp, pos, rot)
+        }
     }
 }
