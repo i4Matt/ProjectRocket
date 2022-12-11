@@ -165,7 +165,7 @@ public class ProjectileGun : MonoBehaviour
         {
             print(contact.thisCollider.name + " hit " + contact.otherCollider.name);
             // Visualize the contact point
-            object value = Debug.DrawRay(contact.point, contact.normal, Color.white);
+            //object value = Debug.DrawRay(contact.point, contact.normal, Color.white);
         }
     }
 
