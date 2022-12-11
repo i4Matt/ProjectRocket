@@ -160,13 +160,13 @@ public class ProjectileGun : MonoBehaviour
     
 
 
-    private void OncollisionEnter(Collision co)
+    private void OnCollisionEnter(Collision co)
     {
         shootForce = 0;
         upwardForce = 0;
 
         ContactPoint contact = co.contacts[0];
-        Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
+        Quaternion rot = Quaternion.FromToRotation (Vector3.up, contact.normal);
         Vector3 pos = contact.point;
 
         if (exp != null)
