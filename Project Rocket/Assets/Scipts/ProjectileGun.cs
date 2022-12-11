@@ -160,7 +160,7 @@ public class ProjectileGun : MonoBehaviour
     
 
 
-    private void OnCollisionEnter(Collision co)
+    void OnCollisionEnter(Collision co)
     {
         shootForce = 0;
         upwardForce = 0;
