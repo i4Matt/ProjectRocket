@@ -157,7 +157,10 @@ public class ProjectileGun : MonoBehaviour
     }
 
 
-    private void OncollisionEnter(Collision co)
+    
+
+
+   /* private void OncollisionEnter(Collision co)
     {
         shootForce = 0;
         upwardForce = 0;
@@ -168,7 +171,10 @@ public class ProjectileGun : MonoBehaviour
 
         if (exp != null)
         {
-            var hitVfX = Instantiate(exp, pos, rot);
+            var hitVfX = Instantiate (exp, pos, rot);
         }
-    }
+
+
+        Destroy (currentBullet);
+    }*/
 }
