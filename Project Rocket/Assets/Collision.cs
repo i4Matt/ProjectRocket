@@ -32,4 +32,5 @@ public class Collision : MonoBehaviour
         Destroy(gameObject);
     }
 
+
 }
