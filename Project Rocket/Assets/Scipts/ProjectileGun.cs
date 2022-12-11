@@ -159,7 +159,7 @@ public class ProjectileGun : MonoBehaviour
 
 
 
-    void OnCollisionStay(Collision collision)
+    /*void OnCollisionStay(Collision collision)
     {
         foreach (ContactPoint contact in collision.contacts)
         {
@@ -185,5 +185,5 @@ public class ProjectileGun : MonoBehaviour
 
 
         Destroy (gameObject);
-    }
+    }*/
 }
