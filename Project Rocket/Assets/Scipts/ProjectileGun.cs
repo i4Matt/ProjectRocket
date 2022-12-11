@@ -160,12 +160,12 @@ public class ProjectileGun : MonoBehaviour
     
 
 
-   /* private void OncollisionEnter(Collision co)
+    private void OncollisionEnter(Collision co)
     {
         shootForce = 0;
         upwardForce = 0;
 
-        ConatactPoint contact = co.contacts[0];
+        ContactPoint contact = co.contacts[0];
         Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
         Vector3 pos = contact.point;
 
@@ -175,6 +175,6 @@ public class ProjectileGun : MonoBehaviour
         }
 
 
-        Destroy (currentBullet);
-    }*/
+        Destroy (gameObject);
+    }
 }
