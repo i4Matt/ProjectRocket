@@ -49,19 +49,19 @@ public class ProjectileGun : MonoBehaviour
     public bool allowInvoke = true;
 
     // Start is called before the first frame update
-    private void Start()
+    void Start()
     {
         
     }
 
-    private void Awake(){
+    void Awake(){
         // Make Sure Magazine is Full
         bulletsLeft = magazineSize;
         readyToShoot = true;
     }
 
     // Update is called once per frame
-    private void Update()
+    void Update()
     {
         MyInput();
 
@@ -71,7 +71,7 @@ public class ProjectileGun : MonoBehaviour
         }
     }
 
-    private void MyInput(){
+    void MyInput(){
         // Check if allowed to hold down button and take corresponding input
         if (allowButtonHold) shooting = Input.GetKey(shootKey);
         else Input.GetKeyDown(shootKey);
@@ -90,7 +90,7 @@ public class ProjectileGun : MonoBehaviour
         }
     }
 
-    private void Shoot(){
+    void Shoot(){
         readyToShoot = false;
 
         // Find the exact hit position using a raycast
@@ -141,17 +141,17 @@ public class ProjectileGun : MonoBehaviour
             Invoke("Shoot", timeBetweenShots);
     }
 
-    private void ResetShot(){
+    void ResetShot(){
         readyToShoot = true;
         allowInvoke = true;
     }
 
-    private void Reload(){
+    void Reload(){
         reloading = true;
         Invoke("ReloadFinished", reloadTime);
     }
 
-    private void ReloadFinished() {
+    void ReloadFinished() {
         bulletsLeft = magazineSize;
         reloading = false;
     }
