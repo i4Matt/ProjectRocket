@@ -906,7 +906,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 04109bdef179d0a4288b643551e711a0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e74e990be6df8a945bf575d5916157b4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -13188,6 +13188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1241879158}
+  exp: {fileID: 0}
   shootForce: 300
   upwardForce: 0
   timeBetweenShooting: 0.1
