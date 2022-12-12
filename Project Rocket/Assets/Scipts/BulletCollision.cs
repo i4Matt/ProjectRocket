@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collision : MonoBehaviour
+public class BulletCollision : MonoBehaviour
 {
-
-
     [Header("Explosion")]
     public ParticleSystem exp;
 
