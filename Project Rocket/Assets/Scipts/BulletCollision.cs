@@ -6,6 +6,7 @@ public class BulletCollision : MonoBehaviour
 {
     [Header("Explosion")]
     public ParticleSystem exp;
+    public float radius, expForce;
 
     public ContactPoint[] contacts;
     // Start is called before the first frame update
@@ -41,10 +42,23 @@ public class BulletCollision : MonoBehaviour
         if (exp != null)
         {
             var expChild = Instantiate(exp, pos, rot);
+            knockBack();
         }
         Destroy(gameObject);
     }
 
+    void knockBack()
+    {
+        Collider[] launch = Physics.OverlapSphere(transform.position, radius);
 
+        foreach (Collider nearby in launch)
+        {
+            Rigidbody rigg = nearby.GetComponent<Rigidbody>();
+            if (rigg != null)
+            {
+                rigg.AddExplosionForce(expForce, transform.position, radius);
+            }
+        }
+    }
 
 }
