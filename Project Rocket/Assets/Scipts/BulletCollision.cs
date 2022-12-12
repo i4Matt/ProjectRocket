@@ -7,12 +7,19 @@ public class BulletCollision : MonoBehaviour
     [Header("Explosion")]
     public ParticleSystem exp;
     public float radius, expForce;
+    public int MaxHits = 25;
+    public int MaxDamage = 50;
+    public int MinDamage = 10;
+    public LayerMask HitLayer;
+    public LayerMask BlockExplosionLayer;
 
-    public ContactPoint[] contacts;
+    private Collider[] Hits; 
+
+
     // Start is called before the first frame update
     void Start()
     {
-
+        Hits = new Collider[MaxHits];
     }
 
     // Update is called once per frame
@@ -21,16 +28,6 @@ public class BulletCollision : MonoBehaviour
         
     }
 
-
-    /*void OnCollisionStay(UnityEngine.Collision collision)
-    {
-        foreach (ContactPoint contact in collision.contacts)
-        {
-            print(contact.thisCollider.name + " hit " + contact.otherCollider.name);
-            // Visualize the contact point
-            Debug.DrawRay(contact.point, contact.normal, Color.white);
-        }
-    }*/
 
 
     void OnCollisionEnter(UnityEngine.Collision collision)
@@ -51,12 +48,12 @@ public class BulletCollision : MonoBehaviour
     {
         Collider[] launch = Physics.OverlapSphere(transform.position, radius);
 
-        foreach (Collider nearby in launch)
+        foreach (Collider c in launch) 
         {
-            Rigidbody rigg = nearby.GetComponent<Rigidbody>();
-            if (rigg != null)
+            Rigidbody rig = c.GetComponent<Rigidbody>();
+            if (rig != null)
             {
-                rigg.AddExplosionForce(expForce, transform.position, radius);
+                rig.AddExplosionForce(expForce,transform.position, radius);
             }
         }
     }
