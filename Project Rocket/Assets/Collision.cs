@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletCollision : MonoBehaviour
+public class Collision : MonoBehaviour
 {
+
+
     [Header("Explosion")]
     public ParticleSystem exp;
 
@@ -11,7 +13,7 @@ public class BulletCollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        exp = GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -40,11 +42,10 @@ public class BulletCollision : MonoBehaviour
 
         if (exp != null)
         {
-            var expChild = Instantiate(exp, pos, rot);
+            Instantiate(exp, pos, rot);
         }
         Destroy(gameObject);
     }
-
 
 
 }
