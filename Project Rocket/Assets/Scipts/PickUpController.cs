@@ -26,12 +26,12 @@ public class PickUpController : MonoBehaviour
     {
         //Setup
         if (!equipped){
-            //Enable Pew Pew
+            gunScript.enabled = false;
             rb.isKinematic = false;
             coll.isTrigger = false;
         }
         if (equipped){
-            //Disable Pew Pew
+            gunScript.enabled = true;
             rb.isKinematic = true;
             coll.isTrigger = true;
             slotFull = true;

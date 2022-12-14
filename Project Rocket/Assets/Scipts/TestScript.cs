@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class TestScript : MonoBehaviour
 {
-    public Rigidbody playerRB;
+    public PlayerCam plCam;
+    public PlayerMovement plMove;
+
+    static bool inMenu = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +18,17 @@ public class TestScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape) && !inMenu){
+            plCam.enabled = false;
+            plMove.enabled = false;
+
+            inMenu = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape) && inMenu){
+            plCam.enabled = true;
+            plMove.enabled = true;
+
+            inMenu = false;
+        }
     }
 }
