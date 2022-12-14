@@ -7,6 +7,7 @@ public class MenuButtons : MonoBehaviour
     // Start is called before the first frame update
     public static bool GameIsPaused = false;
     public GameObject PauseMenuUI;
+    public GameObject OptionsMenu;
     
     public void QuitGame ()
     {
@@ -33,6 +34,7 @@ public class MenuButtons : MonoBehaviour
     public void Resume()
     {
         PauseMenuUI.SetActive(false);
+        OptionsMenu.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
