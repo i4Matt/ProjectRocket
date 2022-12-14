@@ -12,9 +12,6 @@ public class BulletCollision : MonoBehaviour
     public int MinDamage = 10;
     public LayerMask HitLayer;
     public LayerMask BlockExplosionLayer;
-    public GameObject player;
-    public Rigidbody playerRB;
-    public Collider playerColider;
 
     private Collider[] Hits; 
 
@@ -23,8 +20,6 @@ public class BulletCollision : MonoBehaviour
     void Start()
     {
         Hits = new Collider[MaxHits];
-        playerRB = player.GetComponent<Rigidbody>();
-        playerColider = player.GetComponent<Collider>();
     }
 
     // Update is called once per frame
