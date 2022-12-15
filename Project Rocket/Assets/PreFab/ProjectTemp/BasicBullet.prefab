@@ -129,7 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exp: {fileID: 3005507817256441892, guid: c53594e0fcf488b4dad794fc34467ce7, type: 3}
   radius: 6
-  expForce: 600
+  expForce: 300
   MaxHits: 25
   MaxDamage: 50
   MinDamage: 10
@@ -139,6 +139,3 @@ MonoBehaviour:
   BlockExplosionLayer:
     serializedVersion: 2
     m_Bits: 0
-  player: {fileID: 8675363312409734340, guid: fcebf32c99b0730428f8c1833f57da89, type: 3}
-  playerRB: {fileID: 0}
-  playerColider: {fileID: 0}

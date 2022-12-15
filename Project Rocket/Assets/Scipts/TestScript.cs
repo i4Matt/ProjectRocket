@@ -18,6 +18,13 @@ public class TestScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+
+
+
+    private void LockPlayer(){
         if (Input.GetKeyDown(KeyCode.Escape) && !inMenu){
             plCam.enabled = false;
             plMove.enabled = false;
