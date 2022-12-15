@@ -130,12 +130,12 @@ MonoBehaviour:
   exp: {fileID: 3005507817256441892, guid: c53594e0fcf488b4dad794fc34467ce7, type: 3}
   radius: 6
   expForce: 300
-  MaxHits: 25
-  MaxDamage: 50
-  MinDamage: 10
   HitLayer:
     serializedVersion: 2
     m_Bits: 0
   BlockExplosionLayer:
     serializedVersion: 2
     m_Bits: 0
+  explode: 1
+  isHostile: 0
+  shotDistance: 200
