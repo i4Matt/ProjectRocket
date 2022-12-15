@@ -4,13 +4,23 @@ using UnityEngine;
 
 public class BulletCollision : MonoBehaviour
 {
-    [Header("Explosion")]
+    [Header("References")]
     public ParticleSystem exp;
-    public float radius, expForce;
+
+    [Header("Explosion")]
+    public bool doesExplode;
+    public float explosionRadius;
+    public float explosionForce;
+
+    [Header("Settings")]
+    
+    public bool isHostile;
+
+    
+    
     public LayerMask HitLayer;
     public LayerMask BlockExplosionLayer;
-    public bool explode;
-    public bool isHostile;
+    
 
     private Vector3 startPosition;
     public float shotDistance;
@@ -43,7 +53,7 @@ public class BulletCollision : MonoBehaviour
         Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
         Vector3 pos = contact.point;
 
-        if (exp != null && explode)
+        if (exp != null && doesExplode)
         {
             var expChild = Instantiate(exp, pos, rot);
             knockBack();
@@ -53,14 +63,14 @@ public class BulletCollision : MonoBehaviour
 
     void knockBack()
     {
-        Collider[] launch = Physics.OverlapSphere(transform.position, radius);
+        Collider[] launch = Physics.OverlapSphere(transform.position, explosionRadius);
 
         foreach (Collider c in launch) 
         {
             Rigidbody rig = c.GetComponent<Rigidbody>();
             if (rig != null)
             {
-                rig.AddExplosionForce(expForce,transform.position, radius);
+                rig.AddExplosionForce(explosionForce,transform.position, explosionRadius);
             }
         }
     }

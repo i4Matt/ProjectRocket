@@ -6,21 +6,21 @@ using UnityEngine.AI;
 public class EnemyAi : MonoBehaviour
 {
 
+    [Header("References")]
     public Transform player;
-    
-    public LayerMask whatIsGround, whatIsPlayer;
-
-    public float bulletSpeed;
-
-    //Attacking
-    public float timeBetweenAttacks;
-    bool alreadyAttacked;
-    public GameObject projectile;
     public Transform attackPoint;
+    public LayerMask whatIsGround, whatIsPlayer;
+    public GameObject projectile;
+
+    [Header("Settings")]
+    //Attacking
+    public float attackRange;
+    public float bulletSpeed;
+    public float timeBetweenAttacks;
 
     //States
-    public float attackRange;
-    public bool  playerInAttackRange;
+    private bool alreadyAttacked;
+    private bool playerInAttackRange;
 
 
 
