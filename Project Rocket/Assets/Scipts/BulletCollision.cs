@@ -74,7 +74,7 @@ public class BulletCollision : MonoBehaviour
             Rigidbody rig = c.GetComponent<Rigidbody>();
             if (rig != null)
             {
-                rig.AddExplosionForce(explosionForce,transform.position, explosionRadius);
+                rig.AddExplosionForce(explosionForce, transform.position, explosionRadius);
             }
             if (c.gameObject.GetComponent<Health>() != null && c.gameObject.name != "Player")
             {

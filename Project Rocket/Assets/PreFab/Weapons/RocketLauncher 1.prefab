@@ -109,9 +109,9 @@ MonoBehaviour:
   upwardForce: 0
   timeBetweenShooting: 0.25
   spread: 0
-  reloadTime: 1.5
+  reloadTime: 1
   timeBetweenShots: 0
-  magazineSize: 69
+  magazineSize: 1
   bulletsPerTap: 1
   allowButtonHold: 1
   fpsCam: {fileID: 0}
