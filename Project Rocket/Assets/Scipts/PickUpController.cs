@@ -10,6 +10,7 @@ public class PickUpController : MonoBehaviour
     public Rigidbody rb;
     public BoxCollider coll;
     public Transform player, gunContainer, fpsCam;
+    public Canvas crossHair;
 
     public float pickUpRange;
     public float dropForwardForce, dropUpwardForce;
@@ -65,6 +66,9 @@ public class PickUpController : MonoBehaviour
 
         // Enable Gun Script
         gunScript.enabled = true;
+
+        //Enable Hud
+        crossHair.enabled = true;
     }
 
     private void Drop(){
@@ -90,5 +94,8 @@ public class PickUpController : MonoBehaviour
 
         // Disable Gun Script
         gunScript.enabled = false;
+
+        // Disable Hud
+        crossHair.enabled = false;
     }
 }
