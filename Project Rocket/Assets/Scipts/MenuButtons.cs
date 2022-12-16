@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuButtons : MonoBehaviour
 {
@@ -9,10 +10,10 @@ public class MenuButtons : MonoBehaviour
     public GameObject PauseMenuUI;
     public GameObject OptionsMenu;
     
-    public void QuitGame ()
+    public void LevelReturn ()
     {
         //Debug.Log("QUIT")
-        Application.Quit();
+        SceneManager.LoadScene(0);
     }
 
 

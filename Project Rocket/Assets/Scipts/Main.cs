@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class Main : MonoBehaviour
 {   
 
     public void  PlayLevel(int val)
@@ -17,3 +17,4 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 }
+
