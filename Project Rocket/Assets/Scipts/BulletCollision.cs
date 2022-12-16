@@ -13,19 +13,15 @@ public class BulletCollision : MonoBehaviour
     public float explosionForce;
 
     [Header("Settings")]
-    
-    public bool isHostile;
 
-    
-    
+    public bool isHostile;
     public LayerMask HitLayer;
     public LayerMask BlockExplosionLayer;
-    
 
     private Vector3 startPosition;
     public float shotDistance;
 
-    private Collider[] Hits; 
+    private Collider[] Hits;
 
 
     // Start is called before the first frame update
@@ -53,6 +49,14 @@ public class BulletCollision : MonoBehaviour
         Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
         Vector3 pos = contact.point;
 
+        if (isHostile)
+        {
+            if (collision.gameObject.GetComponent<Health>() != null)
+            {
+                collision.gameObject.GetComponent<Health>().TakeDamage();
+            }
+        }
+
         if (exp != null && doesExplode)
         {
             var expChild = Instantiate(exp, pos, rot);
@@ -71,6 +75,10 @@ public class BulletCollision : MonoBehaviour
             if (rig != null)
             {
                 rig.AddExplosionForce(explosionForce,transform.position, explosionRadius);
+            }
+            if (c.gameObject.GetComponent<Health>() != null && c.gameObject.name != "Player")
+            {
+                c.gameObject.GetComponent<Health>().TakeDamage();
             }
         }
     }
