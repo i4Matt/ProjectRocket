@@ -10,9 +10,6 @@ public class ProjectileGun : MonoBehaviour
     [Header("Bullet")]
     public GameObject bullet;
 
-    [Header("Explosion")]
-    public GameObject exp;
-
     [Header("Force")]
     public float shootForce;
     public float upwardForce;
@@ -42,6 +39,10 @@ public class ProjectileGun : MonoBehaviour
     [Header("KeyBinds")]
     public KeyCode shootKey = KeyCode.Mouse0;
     public KeyCode reloadKey = KeyCode.R;
+
+    [Header("Sound Effects")]
+    public AudioSource shootingSFX;
+    public AudioSource reloadingSFX;
 
     [Header("Other")]
     public bool allowInvoke = true;
@@ -84,6 +85,7 @@ public class ProjectileGun : MonoBehaviour
 
     void Shoot(){
         readyToShoot = false;
+        shootingSFX.Play();
 
         // Find the exact hit position using a raycast
         Ray ray = fpsCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)); // Just a ray throug the middle of you....... IDK His screen cuts off.
@@ -140,6 +142,7 @@ public class ProjectileGun : MonoBehaviour
 
     void Reload(){
         reloading = true;
+        reloadingSFX.Play();
         Invoke("ReloadFinished", reloadTime);
     }
 

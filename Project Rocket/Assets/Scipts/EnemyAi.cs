@@ -22,6 +22,8 @@ public class EnemyAi : MonoBehaviour
     private bool alreadyAttacked;
     private bool playerInAttackRange;
 
+    [Header("Audio Sources")]
+    public AudioSource shootingSFX;
 
 
     // Start is called before the first frame update
@@ -83,6 +85,7 @@ public class EnemyAi : MonoBehaviour
 
         if(!alreadyAttacked)
         {
+            shootingSFX.Play();
             //Attack Code
             Rigidbody shot= Instantiate(projectile, attackPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
 
