@@ -9541,7 +9541,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1274737930016453340, guid: af8238413b6ebbd4e87e80ca15652bee, type: 3}
       propertyPath: m_Name
-      value: Enemy (1)
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 1274737930016453343, guid: af8238413b6ebbd4e87e80ca15652bee, type: 3}
       propertyPath: bulletSpeed
@@ -11758,7 +11758,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1274737930016453340, guid: af8238413b6ebbd4e87e80ca15652bee, type: 3}
       propertyPath: m_Name
-      value: Enemy (2)
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 1274737930016453343, guid: af8238413b6ebbd4e87e80ca15652bee, type: 3}
       propertyPath: bulletSpeed
