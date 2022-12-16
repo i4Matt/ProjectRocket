@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class MainMenu : MonoBehaviour
-{
-    public void PlayGame ()
-    {
-        SceneManager.LoadScene(1);
-    }
 
+public class MainMenu : MonoBehaviour
+{   
+
+    public void  PlayLevel(int val)
+    {
+        SceneManager.LoadScene(val);
+    }
+   
     public void QuitGame ()
     {
-        //Debug.Log("QUIT")
-        //Application.Quit();
+        Debug.Log("QUIT");
+        Application.Quit();
     }
 }
