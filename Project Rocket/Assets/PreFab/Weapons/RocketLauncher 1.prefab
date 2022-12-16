@@ -85,6 +85,7 @@ MonoBehaviour:
   player: {fileID: 0}
   gunContainer: {fileID: 0}
   fpsCam: {fileID: 0}
+  crossHair: {fileID: 0}
   pickUpRange: 4
   dropForwardForce: 0.5
   dropUpwardForce: 7
@@ -107,9 +108,9 @@ MonoBehaviour:
   exp: {fileID: 0}
   shootForce: 300
   upwardForce: 0
-  timeBetweenShooting: 0.25
+  timeBetweenShooting: 0
   spread: 0
-  reloadTime: 1
+  reloadTime: 0.75
   timeBetweenShots: 0
   magazineSize: 1
   bulletsPerTap: 1
