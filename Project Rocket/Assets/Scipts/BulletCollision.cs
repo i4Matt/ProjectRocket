@@ -13,10 +13,7 @@ public class BulletCollision : MonoBehaviour
     public float explosionForce;
 
     [Header("Settings")]
-
     public bool isHostile;
-    public LayerMask HitLayer;
-    public LayerMask BlockExplosionLayer;
 
     private Vector3 startPosition;
     public float shotDistance;

@@ -11,6 +11,7 @@ public class Health : MonoBehaviour
     public float respawnTime;
     public GameObject heart1;
     public GameObject heart2;
+    public AudioSource getHit;
 
     // Start is called before the first frame update
     void Start()
@@ -30,10 +31,10 @@ public class Health : MonoBehaviour
         if(gameObject.name == "Player")
         {
         heart2.SetActive(false);
+        getHit.Play();
         }
         if (currentHealth <= 0)
         {
-            
             if (gameObject.name == "Player")
             {
                 heart1.SetActive(false);
