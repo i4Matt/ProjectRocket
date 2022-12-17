@@ -31,12 +31,14 @@ public class PickUpController : MonoBehaviour
             rb.isKinematic = false;
             coll.isTrigger = false;
             slotFull = false;
+            crossHair.enabled = false;
         }
         if (equipped){
             gunScript.enabled = true;
             rb.isKinematic = true;
             coll.isTrigger = true;
             slotFull = true;
+            crossHair.enabled = true;
         }
     }
 
