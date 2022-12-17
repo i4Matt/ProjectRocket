@@ -14,6 +14,7 @@ public class MenuButtons : MonoBehaviour
     {
         //Debug.Log("QUIT")
         SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
     }
 
 
