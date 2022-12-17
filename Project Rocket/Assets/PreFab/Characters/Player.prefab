@@ -321,7 +321,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -850, y: -435}
+  m_AnchoredPosition: {x: -616.6999, y: -305.7}
   m_SizeDelta: {x: 20, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4593575600269357482
@@ -397,7 +397,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -875, y: -435}
+  m_AnchoredPosition: {x: -641.6999, y: -305.7}
   m_SizeDelta: {x: 20, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8464285445190636034
@@ -1579,7 +1579,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -900, y: -435}
+  m_AnchoredPosition: {x: -666.6999, y: -305.7}
   m_SizeDelta: {x: 20, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1120833683658963236
@@ -1789,7 +1789,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -925, y: -435}
+  m_AnchoredPosition: {x: -691.7, y: -305.7}
   m_SizeDelta: {x: 20, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3405849251018455491
@@ -2055,6 +2055,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6396268209740682172}
+  - component: {fileID: 3290347845764118068}
   m_Layer: 6
   m_Name: GunConainer
   m_TagString: Untagged
@@ -2077,6 +2078,23 @@ Transform:
   m_Father: {fileID: 6396268209266108771}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &3290347845764118068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6396268209059150706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75ec91444267af34c92d29f4386389ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet1: {fileID: 1813484810907061846}
+  bullet2: {fileID: 1458775428544922850}
+  gun1: {fileID: 40164351693867328, guid: 6b12f76aa530c5840aaac7fd171d9c75, type: 3}
+  gun2: {fileID: 4382260619096033815, guid: e012a3952e6c7384eaa47de9d539af6d, type: 3}
+  gunheld: {fileID: 0}
 --- !u!1 &6396268209166256872
 GameObject:
   m_ObjectHideFlags: 0
@@ -2089,6 +2107,7 @@ GameObject:
   - component: {fileID: 6396268209166256876}
   - component: {fileID: 6396268209166256875}
   - component: {fileID: 6396268209166256874}
+  - component: {fileID: 3008143542408227705}
   m_Layer: 6
   m_Name: Crosshair
   m_TagString: Untagged
@@ -2178,6 +2197,23 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3008143542408227705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6396268209166256872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75ec91444267af34c92d29f4386389ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet1: {fileID: 0}
+  bullet2: {fileID: 0}
+  gun1: {fileID: 0}
+  gun2: {fileID: 0}
+  gunheld: {fileID: 0}
 --- !u!1 &6396268209178491652
 GameObject:
   m_ObjectHideFlags: 0
