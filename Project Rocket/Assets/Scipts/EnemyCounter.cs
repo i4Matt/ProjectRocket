@@ -14,6 +14,8 @@ public class EnemyCounter : MonoBehaviour
     Scene currentScene;
     public GUIStyle style;
 
+    public int xLoc, yLoc;
+
     private void Start()
     {
         isVisible = false;
@@ -50,7 +52,7 @@ public class EnemyCounter : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(0, 0, 600, 100), "Enemies Remaining: " + enemiesLeft, style);
+        GUI.Label(new Rect(960, 540, xLoc, yLoc), "Enemies Remaining: " + enemiesLeft, style);
     }
 
 

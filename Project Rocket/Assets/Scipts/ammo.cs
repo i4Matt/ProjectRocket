@@ -11,5 +11,4 @@ public class ammo : MonoBehaviour
     public GameObject gunheld;
 
     // Start is called before the first frame update
-    if( )
 }
