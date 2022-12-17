@@ -25,9 +25,9 @@ public class EndOfLevel : MonoBehaviour
 
         if (!enemiesLeft)
         {
-            Time.timeScale = 0.5f;
+            Time.timeScale = 0.25f;
             victory.SetActive(true);
-            Invoke("ToMenu", 2);
+            Invoke("ToMenu", 1);
         }
     }
 
