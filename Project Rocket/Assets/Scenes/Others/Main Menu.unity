@@ -2688,6 +2688,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -12.578
       objectReference: {fileID: 0}
+    - target: {fileID: -8102123548303249793, guid: 0baf317192efbe3438476239f3c905fb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e44f35702e57e844ba41a6b902ead5ca, type: 2}
     - target: {fileID: 919132149155446097, guid: 0baf317192efbe3438476239f3c905fb, type: 3}
       propertyPath: m_Name
       value: rocketL beta2
