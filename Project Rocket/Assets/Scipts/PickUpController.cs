@@ -22,6 +22,9 @@ public class PickUpController : MonoBehaviour
     public KeyCode pickUpKey = KeyCode.E;
     public KeyCode dropKey = KeyCode.Q;
 
+    public GameObject bullet1;
+    public GameObject bullet2;
+
     // Start is called before the first frame update
     private void Start()
     {
