@@ -108,7 +108,7 @@ MonoBehaviour:
   bullet: {fileID: 2997086511025447624, guid: 13e0df9d5d3605743bb45b79ba275b5d, type: 3}
   shootForce: 300
   upwardForce: 0
-  timeBetweenShooting: 0
+  timeBetweenShooting: 0.25
   spread: 0
   reloadTime: 0.75
   timeBetweenShots: 0
