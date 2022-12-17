@@ -2283,6 +2283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rocketL beta2
       objectReference: {fileID: 0}
+    - target: {fileID: 7202271454713460447, guid: 0baf317192efbe3438476239f3c905fb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a1353b03867400e4da50ff877764edfc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0baf317192efbe3438476239f3c905fb, type: 3}
 --- !u!1 &1071894882
