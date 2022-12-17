@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 8582999366278621029}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,6 +92,7 @@ MonoBehaviour:
   attackRange: 22
   bulletSpeed: 4
   timeBetweenAttacks: 3
+  shootingSFX: {fileID: 0}
 --- !u!54 &8582999366278621031
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -136,6 +137,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   currentHealth: 1
+  respawnTime: 0
+  heart1: {fileID: 0}
+  heart2: {fileID: 0}
 --- !u!1 &8582999366386090809
 GameObject:
   m_ObjectHideFlags: 0

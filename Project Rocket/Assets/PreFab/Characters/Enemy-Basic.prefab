@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 2108921718347902630}
   m_Layer: 0
   m_Name: Enemy-Basic
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -206,6 +206,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   currentHealth: 1
+  respawnTime: 0
+  heart1: {fileID: 0}
+  heart2: {fileID: 0}
 --- !u!1 &2108921720001514231
 GameObject:
   m_ObjectHideFlags: 0
