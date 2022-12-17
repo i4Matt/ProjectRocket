@@ -101,7 +101,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 84
+  controlID: 19
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 82
+  controlID: 17
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 83
+  controlID: 18
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -458,15 +458,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scipts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Nick M\OneDrive\Documents\GitHub\ProjectRocket\Project
-    Rocket
+  m_LastProjectPath: C:\Users\Nick M\Documents\GitHub\ProjectRocket\Project Rocket
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: d4650000
-    m_LastClickedID: 26068
-    m_ExpandedIDs: 00000000c0650000d0650000d265000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 6c680000
+    m_LastClickedID: 26732
+    m_ExpandedIDs: 000000005668000062680000686800006a68000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -494,7 +493,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c0650000
+    m_ExpandedIDs: 0000000056680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -582,8 +581,8 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 2a49ffff86c00000a6c00000c0c0000022c10000
+      m_LastClickedID: 68376
+      m_ExpandedIDs: 3a0a0100880a01009e0a0100c20a0100d80a0100020b0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -599,7 +598,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 3}
+        m_ClientGUIView: {fileID: 2}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -887,9 +886,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 440.39175, y: 266.02222, z: 20.282562}
+    m_Target: {x: 295.81702, y: 334.30914, z: -27.244446}
     speed: 2
-    m_Value: {x: 714.5002, y: 367, z: 5}
+    m_Value: {x: 295.81702, y: 334.30914, z: -27.244446}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -936,13 +935,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.11066222, y: 0.044395093, z: -0.004948747, w: 0.9928597}
+    m_Target: {x: 0.08597657, y: 0.14412884, z: -0.012571436, w: 0.98574305}
     speed: 2
-    m_Value: {x: 0.115153685, y: 0.16282041, z: -0.019138008, w: 0.97972596}
+    m_Value: {x: 0.085976034, y: 0.14412795, z: -0.012571358, w: 0.9857369}
   m_Size:
-    m_Target: 642.41925
+    m_Target: 370.95786
     speed: 2
-    m_Value: 345.11368
+    m_Value: 354.98358
   m_Ortho:
     m_Target: 0
     speed: 2
