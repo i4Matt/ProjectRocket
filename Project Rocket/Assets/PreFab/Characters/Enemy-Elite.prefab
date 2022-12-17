@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 685470849864372628}
   m_Layer: 0
   m_Name: Enemy-Elite
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,6 +108,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 2
   currentHealth: 2
+  respawnTime: 0
+  heart1: {fileID: 0}
+  heart2: {fileID: 0}
 --- !u!1 &685470849975006664
 GameObject:
   m_ObjectHideFlags: 0
