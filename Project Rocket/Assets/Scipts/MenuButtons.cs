@@ -12,9 +12,10 @@ public class MenuButtons : MonoBehaviour
     
     public void LevelReturn ()
     {
-        //Debug.Log("QUIT")
+        
         SceneManager.LoadScene(0);
         Time.timeScale = 1f;
+        GameIsPaused = false;
     }
 
 
