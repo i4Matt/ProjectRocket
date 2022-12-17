@@ -8358,6 +8358,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1813484810907061846, guid: fcebf32c99b0730428f8c1833f57da89, type: 3}
+      propertyPath: m_Name
+      value: missile1
+      objectReference: {fileID: 0}
     - target: {fileID: 6396268209166256876, guid: fcebf32c99b0730428f8c1833f57da89, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -8412,6 +8416,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcebf32c99b0730428f8c1833f57da89, type: 3}
+--- !u!1 &1105825206 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1458775428544922850, guid: fcebf32c99b0730428f8c1833f57da89, type: 3}
+  m_PrefabInstance: {fileID: 1105825205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1105825207 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1813484810907061846, guid: fcebf32c99b0730428f8c1833f57da89, type: 3}
+  m_PrefabInstance: {fileID: 1105825205}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1131883293
 GameObject:
   m_ObjectHideFlags: 0
@@ -12454,6 +12468,14 @@ PrefabInstance:
       propertyPath: fpsCam
       value: 
       objectReference: {fileID: 919618209}
+    - target: {fileID: 887165773888362794, guid: 6b12f76aa530c5840aaac7fd171d9c75, type: 3}
+      propertyPath: Bullet1
+      value: 
+      objectReference: {fileID: 1105825207}
+    - target: {fileID: 887165773888362794, guid: 6b12f76aa530c5840aaac7fd171d9c75, type: 3}
+      propertyPath: Bullet2
+      value: 
+      objectReference: {fileID: 1105825206}
     - target: {fileID: 887165773888362794, guid: 6b12f76aa530c5840aaac7fd171d9c75, type: 3}
       propertyPath: reloadTime
       value: 1

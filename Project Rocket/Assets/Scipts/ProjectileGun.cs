@@ -31,6 +31,8 @@ public class ProjectileGun : MonoBehaviour
     [Header("References")]
     public Camera fpsCam;
     public Transform attackPoint;
+    public GameObject Bullet1;
+    public GameObject Bullet2;
 
     [Header("Graphics")]
     public GameObject muzzleFlash;
@@ -51,6 +53,8 @@ public class ProjectileGun : MonoBehaviour
         // Make Sure Magazine is Full
         bulletsLeft = magazineSize;
         readyToShoot = true;
+        UIReload();
+
     }
 
     // Update is called once per frame
@@ -62,6 +66,7 @@ public class ProjectileGun : MonoBehaviour
         if (ammunitionDisplay != null){
             ammunitionDisplay.SetText(bulletsLeft / bulletsPerTap + " / " + magazineSize / bulletsPerTap);
         }
+
     }
 
     void MyInput(){
@@ -123,6 +128,7 @@ public class ProjectileGun : MonoBehaviour
 
         bulletsLeft--;
         bulletsShot++;
+        UIDrop();
 
         // Invoke ResetShot function (if not already invoked)
         if (allowInvoke){
@@ -149,5 +155,24 @@ public class ProjectileGun : MonoBehaviour
     void ReloadFinished() {
         bulletsLeft = magazineSize;
         reloading = false;
+        UIReload();
+    }
+
+    void UIReload(){
+        if (magazineSize == 1){
+            Bullet1.SetActive(true);
+            Bullet2.SetActive(false);
+        }else{
+            Bullet1.SetActive(true);
+            Bullet2.SetActive(true);
+        }
+    }
+
+    void UIDrop(){
+        if (bulletsLeft == 1){
+            Bullet2.SetActive(false);
+        }else if (bulletsLeft == 0) {
+            Bullet1.SetActive(false);
+        }
     }
 }

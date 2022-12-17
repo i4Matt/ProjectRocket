@@ -546,6 +546,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcebf32c99b0730428f8c1833f57da89, type: 3}
+--- !u!1 &126035431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1458775428544922850, guid: fcebf32c99b0730428f8c1833f57da89, type: 3}
+  m_PrefabInstance: {fileID: 126035430}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &126035432 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1813484810907061846, guid: fcebf32c99b0730428f8c1833f57da89, type: 3}
+  m_PrefabInstance: {fileID: 126035430}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &129346832
 Mesh:
   m_ObjectHideFlags: 0
@@ -11589,7 +11599,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 40164351693867328, guid: 6b12f76aa530c5840aaac7fd171d9c75, type: 3}
       propertyPath: m_Name
-      value: RocketLauncher 1
+      value: RocketLauncher
       objectReference: {fileID: 0}
     - target: {fileID: 848191785060045818, guid: 6b12f76aa530c5840aaac7fd171d9c75, type: 3}
       propertyPath: m_RootOrder
@@ -11639,6 +11649,14 @@ PrefabInstance:
       propertyPath: fpsCam
       value: 
       objectReference: {fileID: 1238066597}
+    - target: {fileID: 887165773888362794, guid: 6b12f76aa530c5840aaac7fd171d9c75, type: 3}
+      propertyPath: Bullet1
+      value: 
+      objectReference: {fileID: 126035432}
+    - target: {fileID: 887165773888362794, guid: 6b12f76aa530c5840aaac7fd171d9c75, type: 3}
+      propertyPath: Bullet2
+      value: 
+      objectReference: {fileID: 126035431}
     - target: {fileID: 887165773888362795, guid: 6b12f76aa530c5840aaac7fd171d9c75, type: 3}
       propertyPath: fpsCam
       value: 

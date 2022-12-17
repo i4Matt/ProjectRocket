@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &41629723 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1458775428544922850, guid: fcebf32c99b0730428f8c1833f57da89, type: 3}
+  m_PrefabInstance: {fileID: 2085844217}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &70880516 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6396268209266108771, guid: fcebf32c99b0730428f8c1833f57da89, type: 3}
@@ -1500,6 +1505,11 @@ LightingSettings:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2108921718347902634, guid: 5944d6482398a0b45a31e03ae76672c6, type: 3}
   m_PrefabInstance: {fileID: 1689439672}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &849941847 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1813484810907061846, guid: fcebf32c99b0730428f8c1833f57da89, type: 3}
+  m_PrefabInstance: {fileID: 2085844217}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &961147661 stripped
 Transform:
@@ -8448,7 +8458,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 40164351693867328, guid: 6b12f76aa530c5840aaac7fd171d9c75, type: 3}
       propertyPath: m_Name
-      value: RocketLauncher 1
+      value: RocketLauncher
       objectReference: {fileID: 0}
     - target: {fileID: 848191785060045818, guid: 6b12f76aa530c5840aaac7fd171d9c75, type: 3}
       propertyPath: m_RootOrder
@@ -8498,6 +8508,14 @@ PrefabInstance:
       propertyPath: fpsCam
       value: 
       objectReference: {fileID: 70880517}
+    - target: {fileID: 887165773888362794, guid: 6b12f76aa530c5840aaac7fd171d9c75, type: 3}
+      propertyPath: Bullet1
+      value: 
+      objectReference: {fileID: 849941847}
+    - target: {fileID: 887165773888362794, guid: 6b12f76aa530c5840aaac7fd171d9c75, type: 3}
+      propertyPath: Bullet2
+      value: 
+      objectReference: {fileID: 41629723}
     - target: {fileID: 887165773888362795, guid: 6b12f76aa530c5840aaac7fd171d9c75, type: 3}
       propertyPath: fpsCam
       value: 

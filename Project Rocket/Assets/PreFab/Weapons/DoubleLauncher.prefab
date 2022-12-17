@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 3463693630500231804}
   - component: {fileID: 3463693630500231805}
   m_Layer: 0
-  m_Name: 'DoubleLauncher '
+  m_Name: DoubleLauncher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
