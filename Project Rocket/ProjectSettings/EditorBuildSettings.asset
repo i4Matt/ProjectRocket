@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Advanced Levels/Level 3 - Advance.unity
     guid: 50809120767bae043bc51209764371e9
+  - enabled: 1
+    path: Assets/Scenes/Others/Tutorial.unity
+    guid: 7193af6341510424eb0dfdab1f8b1a8e
   m_configObjects: {}
