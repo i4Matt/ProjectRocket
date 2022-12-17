@@ -9,6 +9,7 @@ public class Health : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
     public float respawnTime;
+    public GameObject electricOrb;
     public GameObject heart1;
     public GameObject heart2;
     public AudioSource getHit;
@@ -43,6 +44,8 @@ public class Health : MonoBehaviour
             }
             if (gameObject.name.Contains("Enemy"))
             {
+                Transform pos = gameObject.transform;
+                GameObject elecOrbChild = Instantiate(electricOrb, pos);
                 Destroy(gameObject);
             }
         }

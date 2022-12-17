@@ -109,8 +109,10 @@ MonoBehaviour:
   maxHealth: 2
   currentHealth: 2
   respawnTime: 0
+  electricOrb: {fileID: 3359556476409893053, guid: 605e5502a845bc2479e48e1d7de59d51, type: 3}
   heart1: {fileID: 0}
   heart2: {fileID: 0}
+  getHit: {fileID: 0}
 --- !u!1 &685470849975006664
 GameObject:
   m_ObjectHideFlags: 0
